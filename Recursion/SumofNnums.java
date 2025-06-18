@@ -1,3 +1,6 @@
+package Recursion;
+import java.util.Scanner;
+
 public class SumofNnums{
     public static int checksum(int n) {
         int sum = 0;
@@ -7,7 +10,9 @@ public class SumofNnums{
         return sum;
     }
     public static void main(String[] args) {
-        int n=5;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int n= sc.nextInt();
         int res = checksum(n);
         System.out.println(res);
     }
